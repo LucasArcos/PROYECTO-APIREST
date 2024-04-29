@@ -1,0 +1,73 @@
+//REQUEST CREATE A USER
+POST http://localhost:3000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "dni": 45060242,
+
+    "name": "Lucas Arcos",
+
+    "age": 18,
+
+    "gmail":"Arcoslucas14@gmail.com"
+}
+
+###//REQUEST GET ALL USERS
+GET http://localhost:3000/api/users HTTP/1.1
+
+###//REQUEST GET A USER
+
+GET http://localhost:3000/api/users/662db0ad3786850e34013d72 HTTP/1.1
+
+###//REQUEST UPDATE A USER
+
+PUT http://localhost:3000/api/users/662db0a53786850e34013d70 HTTP/1.1
+Content-Type: application/json
+
+{
+    "dni": 43789521,
+
+    "name": "Tata Martino",
+
+    "age": 23,
+
+    "gmail":"LeoMessiCr7@gmail.com"
+}
+
+###//REQUEST DELETE A USER
+DELETE http://localhost:3000/api/users/662dbdffb5962b4d826fe6d2 HTTP/1.1
+###
+
+///////////////////////////////////////////////////////////////////////////////////////
+
+               //PRODUCTOS
+               //REQUEST CREATE A PRODUCT
+
+POST http://localhost:3000/api/product HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "CPU Ryzen 9 9700X",
+    "price": 200000,
+    "quantity": 2
+}
+###
+            ///REQUEST GET ALL PRODUCTS
+GET http://localhost:3000/api/product HTTP/1.1
+
+###
+            ///GET A PRODUCT
+
+GET http://localhost:3000/api/product/RAM HTTP/1.1
+
+###
+            ///UPDATE A PRODUCT
+
+PUT http://localhost:3000/api/product/662dd91e5499c3d982658ed0 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "MOTHER TufGaming B450Plus",
+    "price": 150000,
+    "quantity": 6
+}
